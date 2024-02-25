@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*--------------------------*/
+header{
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header h3{
+    margin-left:15px ;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/*-----------------------------------*/
+  
+#secaoUm{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#secaoUm #infoPlanetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    max-width: 600px;
+    margin-left: 40px;
+}
+
+#secaoDois{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#secaoDois div{
+    margin: 40px;
+}
+/*--------------------------*/
+h3, h2{
+    font-family: 'Nova Square', sans-serif;
+    color: white;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+p, li, span, a{
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
+}
+/*-------------------------*/
+.botão{
+    margin-top: 15px;
+    width: 300px;
+    max-width: 300px;
+    height: 35px;
+    max-height: 35px;
+    background-color: rgba(245, 222, 179, 0.048);
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+}
+.botão:hover{
+    background-color:rgba(255, 255, 255, 0.438);
+    color: black;
+}
+
+.infoAmais{
+    border: 1px solid white;
+    width: 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------*/
+@media only screen and (max-width: 680px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #secaoUm{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+  }

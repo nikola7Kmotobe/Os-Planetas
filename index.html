@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="imagex/png" href="images/icone_de_barra.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Nova+Square&family=Rethink+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Os Planetas</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h3>Os Planetas</h3>
+      </div>
+
+      <ul>
+        <li onclick="trocarPlaneta(1)">Mercúrio</li>
+        <li onclick="trocarPlaneta(2)">Vênus</li>
+        <li onclick="trocarPlaneta(3)">Terra</li>
+        <li onclick="trocarPlaneta(4)">Marte</li>
+        <li onclick="trocarPlaneta(5)">Júpiter</li>
+        <li onclick="trocarPlaneta(6)">Saturno</li>
+        <li onclick="trocarPlaneta(7)">Urano</li>
+        <li onclick="trocarPlaneta(8)">Netuno</li>
+      </ul>
+    </header>
+
+    <br />
+    <section id="secaoUm">
+      <div>
+        <img
+          src="images/mercurio.png"
+          id="imgPlaneta"
+          alt="Planeta mercurio"
+          width="500px"
+          height="500px"
+        />
+      </div>
+      <div id="infoPlanetas">
+        <h2
+          id="nomePlaneta"
+          style="font-size: 50px; margin: 0"
+        >
+          Mercúrio
+        </h2>
+        <p id="infoPlaneta">
+          Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando
+          o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior
+          excentricidade e o seu eixo apresenta a menor inclinação em relação ao
+          plano da órbita dentre todos os planetas do Sistema Solar.
+        </p>
+        <span
+          >Veja mais em:
+          <a
+            href="https://pt.wikipedia.org/wiki/Merc%C3%BArio_(planeta)"
+            id="wikiPalneta"
+            target="_blank"
+            >Wikipedia</a
+          ></span
+        >
+
+        <button class="botão" onclick="trocarVisãoGeral()">visão geral</button>
+        <button class="botão" onclick="trocarEstruturaInterna()">Estrutura Interna</button>
+        <button class="botão" onclick="trocarSupeficie()">superfície</button>
+      </div>
+    </section>
+    <!--
+
+        
+    -->
+    <section id="secaoDois">
+      <div class="infoAmais">
+        <p>Tempo de Rotação</p>
+        <p id="rotacao" style="font-size: 20px; font-weight: 500; ">59 dias</p>
+      </div>
+      <div class="infoAmais">
+        <p >Tempo de Translação</p>
+        <p id="translacao" style="font-size: 20px; font-weight: 500; ">88 dias</p>
+      </div>
+      <div class="infoAmais">
+        <p>Raio</p>
+        <p id="raio" style="font-size: 20px; font-weight: 500; ">2.439,7 km</p>
+      </div>
+      <div class="infoAmais">
+        <p>Temperatura Média</p>
+        <p id="tempM" style="font-size: 20px; font-weight: 500; ">179 º</p>
+      </div>
+    </section>
+
+    <script src="js/action.js"></script>
+  </body>
+</html>
